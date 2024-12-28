@@ -1,8 +1,103 @@
 [
     {
+        "title": "A Look at Rigorous Probability Theory",
+        "description": "An exploration of probability theory with rigorous foundations.",
+        "cover_path": "covers/a_look_at_rigorous_probability_theory.jpg"
+    },
+    {
+        "title": "A Thousand Brains",
+        "description": "A novel perspective on intelligence and AI development.",
+        "cover_path": "covers/a_thousand_brains.jpg"
+    },
+    {
+        "title": "Advancing Into Analytics",
+        "description": "A practical guide to data analytics and decision-making.",
+        "cover_path": "covers/advancing_into_analytics.jpg"
+    },
+    {
+        "title": "AI and Machine Learning for Coders",
+        "description": "An introductory guide to machine learning concepts for developers.",
+        "cover_path": "covers/ai_and_machine_learning_for_coders.jpg"
+    },
+    {
+        "title": "AI Engineering",
+        "description": "Foundational insights into building AI-driven systems.",
+        "cover_path": "covers/ai_engineering.png"
+    },
+    {
+        "title": "AI Foundations of Neural Networks",
+        "description": "Comprehensive foundations of neural network architecture and AI.",
+        "cover_path": "covers/ai_foundations_of_neural_networks.jpg"
+    },
+    {
         "title": "Artificial Intelligence: A Modern Approach",
         "description": "A comprehensive guide to AI, covering fundamental concepts and practical applications.",
         "cover_path": "covers/ai_modern_approach.jpg"
+    },
+    {
+        "title": "AI Superpowers",
+        "description": "An exploration of the global AI race and its implications.",
+        "cover_path": "covers/ai_superpowers.jpg"
+    },
+    {
+        "title": "The Alignment Problem",
+        "description": "An investigation into the ethical challenges of machine learning.",
+        "cover_path": "covers/alignment_problem.jpg"
+    },
+    {
+        "title": "Architects of Intelligence",
+        "description": "Interviews with leading AI researchers about the future of AI.",
+        "cover_path": "covers/architects_of_intelligence.jpg"
+    },
+    {
+        "title": "Artificial Intelligence Engines",
+        "description": "Insights into the engines that power AI.",
+        "cover_path": "covers/artificial_intelligence_engines.jpg"
+    },
+    {
+        "title": "Artificial Intelligence for IoT",
+        "description": "A deep dive into the application of AI in IoT systems.",
+        "cover_path": "covers/artificial_intelligence_for_iot.jpg"
+    },
+    {
+        "title": "Artificial Intelligence in Practice",
+        "description": "Examples of real-world applications of AI.",
+        "cover_path": "covers/artificial_intelligence_in_practice.jpg"
+    },
+    {
+        "title": "Artificial Unintelligence",
+        "description": "A critique of the current direction of AI research.",
+        "cover_path": "covers/artificial_unintelligence.jpg"
+    },
+    {
+        "title": "Atlas of AI",
+        "description": "An exploration of the social and ethical dimensions of AI.",
+        "cover_path": "covers/atlas_of_ai.jpg"
+    },
+    {
+        "title": "Automating Inequality",
+        "description": "How algorithmic systems contribute to social inequality.",
+        "cover_path": "covers/automating_inequality.jpg"
+    },
+    {
+        "title": "Bayes Rule",
+        "description": "Understanding probability and decision-making with Bayes' Rule.",
+        "cover_path": "covers/bayes_rule.jpg"
+    },
+    {
+        "title": "Behave",
+        "description": "The biology of human behaviour and its relevance to AI.",
+        "cover_path": "covers/behave.jpg"
+    },
+    {
+        "title": "Data-Driven Science and Engineering",
+        "description": "Applications of data-driven approaches in science and engineering.",
+        "cover_path": "covers/data_driven_science_and_engineering.jpg"
+    },
+    {
+        "title": "Data Science From Scratch",
+        "description": "A beginner-friendly introduction to data science techniques.",
+        "cover_path": "covers/data_science_from_scratch.jpg"
     },
     {
         "title": "Deep Learning",
@@ -10,34 +105,129 @@
         "cover_path": "covers/deep_learning.jpg"
     },
     {
-        "title": "Superintelligence: Paths, Dangers, Strategies",
-        "description": "An analysis of the potential future impact of artificial intelligence on human civilization.",
-        "cover_path": "covers/superintelligence.jpg"
+        "title": "Designing Data-Intensive Applications",
+        "description": "Principles of building robust and scalable data-driven applications.",
+        "cover_path": "covers/designing_data_intensive_applications.jpg"
     },
     {
-        "title": "The Master Algorithm",
-        "description": "A quest for the ultimate learning machine that can derive all knowledge from data.",
-        "cover_path": "covers/the_master_algorithm.jpg"
+        "title": "Effective Machine Learning Teams",
+        "description": "Strategies for managing and scaling machine learning teams.",
+        "cover_path": "covers/effective_machine_learning_teams.png"
     },
     {
-        "title": "Life 3.0: Being Human in the Age of Artificial Intelligence",
-        "description": "An exploration of the future of life as AI transforms everything.",
-        "cover_path": "covers/life_3_0.jpg"
+        "title": "Hands-On Machine Learning",
+        "description": "A practical guide to machine learning with code examples.",
+        "cover_path": "covers/hands_on_machine_learning.jpg"
     },
     {
-        "title": "Machine Learning: A Probabilistic Perspective",
-        "description": "A comprehensive introduction to the field of machine learning from a probabilistic viewpoint.",
-        "cover_path": "covers/machine_learning_probabilistic.jpg"
+        "title": "High-Dimensional Probability",
+        "description": "Foundations and insights into high-dimensional statistical analysis.",
+        "cover_path": "covers/high_dimensional_probability.jpg"
     },
     {
-        "title": "Pattern Recognition and Machine Learning",
-        "description": "An introduction to the fields of pattern recognition and machine learning.",
-        "cover_path": "covers/pattern_recognition.jpg"
+        "title": "How to Create a Mind",
+        "description": "Exploring the principles of intelligence to replicate it in AI.",
+        "cover_path": "covers/how_to_create_a_mind.jpg"
     },
     {
-        "title": "The Singularity Is Near",
-        "description": "A look at the future of technology and its implications for humanity.",
-        "cover_path": "covers/singularity_is_near.jpg"
+        "title": "Information Theory",
+        "description": "Understanding the fundamentals of information theory.",
+        "cover_path": "covers/information_theory.jpg"
+    },
+    {
+        "title": "Linear Algebra",
+        "description": "An introduction to linear algebra for AI and ML practitioners.",
+        "cover_path": "covers/linear_algebra.jpg"
+    },
+    {
+        "title": "LLM Engineers Handbook",
+        "description": "A guide to engineering applications of large language models.",
+        "cover_path": "covers/llm_engineers_handbook.png"
+    },
+    {
+        "title": "Machine Learning Design Patterns",
+        "description": "Patterns and best practices for machine learning system design.",
+        "cover_path": "covers/machine_learning_design_patterns.jpg"
+    },
+    {
+        "title": "Machine Learning Production Systems",
+        "description": "Building and maintaining machine learning production systems.",
+        "cover_path": "covers/machine_learning_production_systems.png"
+    },
+    {
+        "title": "Machine Learning Yearning",
+        "description": "A practical guide to AI strategy and project management.",
+        "cover_path": "covers/machine_learning_yearning.png"
+    },
+    {
+        "title": "Modern Multivariate",
+        "description": "Exploring multivariate data analysis methods.",
+        "cover_path": "covers/modern_multivariate.jpg"
+    },
+    {
+        "title": "Natural Language Processing",
+        "description": "Insights into the field of natural language processing.",
+        "cover_path": "covers/natural_language_processing.jpg"
+    },
+    {
+        "title": "Practical Natural Language Processing",
+        "description": "Applications and techniques in NLP.",
+        "cover_path": "covers/practical_natural_language_processing.jpg"
+    },
+    {
+        "title": "Race After Technology",
+        "description": "Exploring racial biases in technological systems.",
+        "cover_path": "covers/race_after_technology.jpg"
+    },
+    {
+        "title": "Random Graphs and Complex Networks",
+        "description": "An analysis of graph structures and their applications.",
+        "cover_path": "covers/random_graphs_and_complex_networks.jpg"
+    },
+    {
+        "title": "Random Matrix Theory",
+        "description": "Mathematical insights into random matrix theory.",
+        "cover_path": "covers/random_matrix_theory.jpg"
+    },
+    {
+        "title": "Ten Visions for Our Future",
+        "description": "Imagining the role of AI in shaping the future.",
+        "cover_path": "covers/ten_visions_for_our_future.jpg"
+    },
+    {
+        "title": "The Age of AI",
+        "description": "Exploring the transformations brought by artificial intelligence.",
+        "cover_path": "covers/the_age_of_ai.jpg"
+    },
+    {
+        "title": "The Book of Why",
+        "description": "Insights into causality and its implications for AI.",
+        "cover_path": "covers/the_book_of_why.jpg"
+    },
+    {
+        "title": "The Brain That Changes Itself",
+        "description": "How the brain's adaptability inspires AI design.",
+        "cover_path": "covers/the_brain_that_changes_itself.jpg"
+    },
+    {
+        "title": "The Coming Wave",
+        "description": "Speculations on AI and its long-term impact.",
+        "cover_path": "covers/the_coming_wave.jpg"
+    },
+    {
+        "title": "The Ethical Algorithm",
+        "description": "Guidelines for developing ethically responsible AI systems.",
+        "cover_path": "covers/the_ethical_algorithm.jpg"
+    },
+    {
+        "title": "The Matter With Things",
+        "description": "A critique of reductionist approaches in AI.",
+        "cover_path": "covers/the_matter_with_things.jpg"
+    },
+    {
+        "title": "The Ultimate Guide to Data Analytics",
+        "description": "An essential guide to mastering data analytics.",
+        "cover_path": "covers/the_ultimate_guide_to_data_analytics.jpg"
     },
     {
         "title": "Thinking, Fast and Slow",
@@ -45,110 +235,13 @@
         "cover_path": "covers/thinking_fast_and_slow.jpg"
     },
     {
-        "title": "The Fourth Industrial Revolution",
-        "description": "An analysis of how a fourth industrial revolution is unfolding.",
-        "cover_path": "covers/fourth_industrial_revolution.jpg"
+        "title": "Weapons of Math Destruction",
+        "description": "How big data increases inequality and threatens democracy.",
+        "cover_path": "covers/weapons_of_math_destruction.jpg"
     },
     {
-        "title": "Human Compatible: Artificial Intelligence and the Problem of Control",
-        "description": "A proposal for building AI systems that are provably aligned with human values.",
-        "cover_path": "covers/human_compatible.jpg"
-    },
-    {
-        "title": "AI Superpowers: China, Silicon Valley, and the New World Order",
-        "description": "An exploration of the global AI race and its implications.",
-        "cover_path": "covers/ai_superpowers.jpg"
-    },
-    {
-        "title": "The Alignment Problem: Machine Learning and Human Values",
-        "description": "An investigation into the ethical challenges of machine learning.",
-        "cover_path": "covers/alignment_problem.jpg"
-    },
-    {
-        "title": "Genius Makers: The Mavericks Who Brought AI to Google, Facebook, and the World",
-        "description": "A chronicle of the pioneers who brought AI to the forefront of technology.",
-        "cover_path": "covers/genius_makers.jpg"
-    },
-    {
-        "title": "The Age of Em: Work, Love, and Life when Robots Rule the Earth",
-        "description": "A look into a future dominated by brain emulation technology.",
-        "cover_path": "covers/age_of_em.jpg"
-    },
-    {
-        "title": "Our Final Invention: Artificial Intelligence and the End of the Human Era",
-        "description": "A cautionary examination of the risks associated with AI development.",
-        "cover_path": "covers/our_final_invention.jpg"
-    },
-    {
-        "title": "The Second Machine Age: Work, Progress, and Prosperity in a Time of Brilliant Technologies",
-        "description": "An analysis of the impact of digital technologies on the economy.",
-        "cover_path": "covers/second_machine_age.jpg"
-    },
-    {
-        "title": "Deep Medicine: How Artificial Intelligence Can Make Healthcare Human Again",
-        "description": "An exploration of how AI can improve healthcare.",
-        "cover_path": "covers/deep_medicine.jpg"
-    },
-    {
-        "title": "The Big Nine: How the Tech Titans and Their Thinking Machines Could Warp Humanity",
-        "description": "An examination of the influence of major tech companies on AI development.",
-        "cover_path": "covers/big_nine.jpg"
-    },
-    {
-        "title": "Architects of Intelligence: The Truth About AI from the People Building It",
-        "description": "Interviews with leading AI researchers about the future of AI.",
-        "cover_path": "covers/architects_of_intelligence.jpg"
-    },
-    {
-        "title": "Artificial Intelligence: Foundations of Computational Agents",
-        "description": "A comprehensive introduction to the foundational concepts of AI.",
-        "cover_path": "covers/ai_foundations.jpg"
-    },
-    {
-        "title": "The Emotion Machine: Commonsense Thinking, Artificial Intelligence, and the Future of the Human Mind",
-        "description": "A theory of how emotions and thinking are intertwined.",
-        "cover_path": "covers/emotion_machine.jpg"
-    },
-    {
-        "title": "Machines of Loving Grace: The Quest for Common Ground Between Humans and Robots",
-        "description": "An exploration of the relationship between humans and robots.",
-        "cover_path": "covers/machines_of_loving_grace.jpg"
-    },
-    {
-        "title": "The Sentient Machine: The Coming Age of Artificial Intelligence",
-        "description": "A discussion on the future of AI and its impact on society.",
-        "cover_path": "covers/sentient_machine.jpg"
-    },
-    {
-        "title": "Artificial Intelligence: A Guide for Thinking Humans",
-        "description": "An accessible introduction to AI for general readers.",
-        "cover_path": "covers/ai_guide_for_humans.jpg"
-    },
-    {
-        "title": "The Technological Singularity",
-        "description": "An analysis of the concept of the technological singularity.",
-        "cover_path": "covers/technological_singularity.jpg"
-    },
-    {
-        "title": "Deep Thinking: Where Machine Intelligence Ends and Human Creativity Begins",
-        "description": "A reflection on the limits of AI and the nature of human creativity.",
-        "cover_path": "covers/deep_thinking.jpg"
-    },
-    {
-        "title": "The Future of Humanity: Terraforming Mars, Interstellar Travel, Immortality, and Our Destiny Beyond Earth",
-        "description": "An exploration of humanity's future in the cosmos.",
-        "cover_path": "covers/future_of_humanity.jpg"
-    },
-    {
-        "title": "The Innovators: How a Group of Hackers, Geniuses, and Geeks Created the Digital Revolution",
-        "description": "An in-depth look at the history of computer science and the digital revolution, highlighting the contributions of various innovators.",
-        "cover_path": "covers/the_innovators.jpg"
-}
+        "title": "You Look Like a Thing and I Love You",
+        "description": "A lighthearted exploration of AI quirks and limitations.",
+        "cover_path": "covers/you_look_like_a_thing_and_i_love_you.jpg"
+    }
 ]
- 
-
-
-
-
-
-
