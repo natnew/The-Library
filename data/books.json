@@ -139,7 +139,9 @@
         "description": "An exploration of humanity's future in the cosmos.",
         "cover_path": "covers/future_of_humanity.jpg"
     },
-    {
-        "title": "The Innovators: How a Group of Hackers, Geniuses
-::contentReference[oaicite:0]{index=0}
+   {
+    "title": "The Innovators: How a Group of Hackers, Geniuses, and Geeks Created the Digital Revolution",
+    "description": "An in-depth look at the history of computer science and the digital revolution, highlighting the contributions of various innovators.",
+    "cover_path": "covers/the_innovators.jpg"
+}
  
