@@ -3,6 +3,7 @@ from langchain_openai import ChatOpenAI
 from langchain.memory import ConversationBufferMemory
 from langchain.chains import ConversationChain
 import os
+import time
 
 # Set your API key here or use environment variables
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "your_openai_api_key")
@@ -22,6 +23,13 @@ def generate_learning_pathway(user_level, interest):
     response = chat_chain.predict(input=prompt)
     return response
 
+# Generator function to stream the learning pathway
+def stream_learning_pathway(user_level, interest):
+    pathway = generate_learning_pathway(user_level, interest)
+    for word in pathway.split():
+        yield word + " "
+        time.sleep(0.05)  # Adjust the sleep time for desired streaming speed
+
 # Streamlit UI setup
 st.set_page_config(page_title="The Library", layout="wide")
 
@@ -29,7 +37,7 @@ st.title("📚 The Library: AI Learning Assistant")
 st.write("Your personal AI guide for discovering and learning about Artificial Intelligence.")
 
 # Your Personal Librarian Section
-st.header("Ask Your Personal Librarian")
+st.header("Your Personal Librarian")
 
 # User input for AI learning interest
 user_interest = st.text_input("What specific AI topic are you interested in?")
@@ -41,9 +49,7 @@ user_level = st.selectbox("Select your AI knowledge level:", ["Beginner", "Inter
 if st.button("Get Learning Pathway"):
     if user_interest and user_level:
         with st.spinner("Generating your personalized learning pathway..."):
-            pathway = generate_learning_pathway(user_level, user_interest)
-        st.subheader("🚀 Your Personalized Learning Pathway:")
-        st.write(pathway)
+            st.write_stream(stream_learning_pathway(user_level, user_interest))
     else:
         st.warning("Please enter an AI topic and select your knowledge level.")
 
