@@ -5,6 +5,13 @@ from langchain.chains import ConversationChain
 import os
 import time
 
+st.set_page_config(
+    page_title="Chatbot",
+    page_icon="🤖",  # You can use an emoji or a path to an image file
+    layout="wide"    # Options are "centered" or "wide"
+)
+
+
 # Set your API key here or use environment variables
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "your_openai_api_key")
 
@@ -31,7 +38,7 @@ def stream_learning_pathway(user_level, interest):
         time.sleep(0.05)  # Adjust the sleep time for desired streaming speed
 
 # Streamlit UI setup
-st.set_page_config(page_title="The Library", layout="wide")
+#st.set_page_config(page_title="The Library", layout="wide")
 
 st.title("📚 The Library: AI Learning Assistant")
 st.write("Your personal AI guide for discovering and learning about Artificial Intelligence.")
