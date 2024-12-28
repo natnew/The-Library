@@ -1,4 +1,9 @@
 import streamlit as st
+
+# Set the page configuration
+st.set_page_config(page_title="The Library - Bookshelf", layout="wide")
+
+# Import other necessary libraries
 import json
 import os
 from PIL import Image
@@ -21,9 +26,6 @@ books = load_books('../data/books.json')
 
 # Sort books alphabetically by title
 books = sorted(books, key=lambda x: x['title'])
-
-# Streamlit app setup
-st.set_page_config(page_title="The Library - Bookshelf", layout="wide")
 
 st.title("📚 The Library: Bookshelf")
 st.write("Explore our curated collection of AI literature.")
