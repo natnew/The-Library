@@ -1,0 +1,145 @@
+[
+    {
+        "title": "Artificial Intelligence: A Modern Approach",
+        "description": "A comprehensive guide to AI, covering fundamental concepts and practical applications.",
+        "cover_path": "covers/ai_modern_approach.jpg"
+    },
+    {
+        "title": "Deep Learning",
+        "description": "An in-depth exploration of deep learning techniques and their implementations.",
+        "cover_path": "covers/deep_learning.jpg"
+    },
+    {
+        "title": "Superintelligence: Paths, Dangers, Strategies",
+        "description": "An analysis of the potential future impact of artificial intelligence on human civilization.",
+        "cover_path": "covers/superintelligence.jpg"
+    },
+    {
+        "title": "The Master Algorithm",
+        "description": "A quest for the ultimate learning machine that can derive all knowledge from data.",
+        "cover_path": "covers/the_master_algorithm.jpg"
+    },
+    {
+        "title": "Life 3.0: Being Human in the Age of Artificial Intelligence",
+        "description": "An exploration of the future of life as AI transforms everything.",
+        "cover_path": "covers/life_3_0.jpg"
+    },
+    {
+        "title": "Machine Learning: A Probabilistic Perspective",
+        "description": "A comprehensive introduction to the field of machine learning from a probabilistic viewpoint.",
+        "cover_path": "covers/machine_learning_probabilistic.jpg"
+    },
+    {
+        "title": "Pattern Recognition and Machine Learning",
+        "description": "An introduction to the fields of pattern recognition and machine learning.",
+        "cover_path": "covers/pattern_recognition.jpg"
+    },
+    {
+        "title": "The Singularity Is Near",
+        "description": "A look at the future of technology and its implications for humanity.",
+        "cover_path": "covers/singularity_is_near.jpg"
+    },
+    {
+        "title": "Thinking, Fast and Slow",
+        "description": "An examination of the two systems that drive the way we think.",
+        "cover_path": "covers/thinking_fast_and_slow.jpg"
+    },
+    {
+        "title": "The Fourth Industrial Revolution",
+        "description": "An analysis of how a fourth industrial revolution is unfolding.",
+        "cover_path": "covers/fourth_industrial_revolution.jpg"
+    },
+    {
+        "title": "Human Compatible: Artificial Intelligence and the Problem of Control",
+        "description": "A proposal for building AI systems that are provably aligned with human values.",
+        "cover_path": "covers/human_compatible.jpg"
+    },
+    {
+        "title": "AI Superpowers: China, Silicon Valley, and the New World Order",
+        "description": "An exploration of the global AI race and its implications.",
+        "cover_path": "covers/ai_superpowers.jpg"
+    },
+    {
+        "title": "The Alignment Problem: Machine Learning and Human Values",
+        "description": "An investigation into the ethical challenges of machine learning.",
+        "cover_path": "covers/alignment_problem.jpg"
+    },
+    {
+        "title": "Genius Makers: The Mavericks Who Brought AI to Google, Facebook, and the World",
+        "description": "A chronicle of the pioneers who brought AI to the forefront of technology.",
+        "cover_path": "covers/genius_makers.jpg"
+    },
+    {
+        "title": "The Age of Em: Work, Love, and Life when Robots Rule the Earth",
+        "description": "A look into a future dominated by brain emulation technology.",
+        "cover_path": "covers/age_of_em.jpg"
+    },
+    {
+        "title": "Our Final Invention: Artificial Intelligence and the End of the Human Era",
+        "description": "A cautionary examination of the risks associated with AI development.",
+        "cover_path": "covers/our_final_invention.jpg"
+    },
+    {
+        "title": "The Second Machine Age: Work, Progress, and Prosperity in a Time of Brilliant Technologies",
+        "description": "An analysis of the impact of digital technologies on the economy.",
+        "cover_path": "covers/second_machine_age.jpg"
+    },
+    {
+        "title": "Deep Medicine: How Artificial Intelligence Can Make Healthcare Human Again",
+        "description": "An exploration of how AI can improve healthcare.",
+        "cover_path": "covers/deep_medicine.jpg"
+    },
+    {
+        "title": "The Big Nine: How the Tech Titans and Their Thinking Machines Could Warp Humanity",
+        "description": "An examination of the influence of major tech companies on AI development.",
+        "cover_path": "covers/big_nine.jpg"
+    },
+    {
+        "title": "Architects of Intelligence: The Truth About AI from the People Building It",
+        "description": "Interviews with leading AI researchers about the future of AI.",
+        "cover_path": "covers/architects_of_intelligence.jpg"
+    },
+    {
+        "title": "Artificial Intelligence: Foundations of Computational Agents",
+        "description": "A comprehensive introduction to the foundational concepts of AI.",
+        "cover_path": "covers/ai_foundations.jpg"
+    },
+    {
+        "title": "The Emotion Machine: Commonsense Thinking, Artificial Intelligence, and the Future of the Human Mind",
+        "description": "A theory of how emotions and thinking are intertwined.",
+        "cover_path": "covers/emotion_machine.jpg"
+    },
+    {
+        "title": "Machines of Loving Grace: The Quest for Common Ground Between Humans and Robots",
+        "description": "An exploration of the relationship between humans and robots.",
+        "cover_path": "covers/machines_of_loving_grace.jpg"
+    },
+    {
+        "title": "The Sentient Machine: The Coming Age of Artificial Intelligence",
+        "description": "A discussion on the future of AI and its impact on society.",
+        "cover_path": "covers/sentient_machine.jpg"
+    },
+    {
+        "title": "Artificial Intelligence: A Guide for Thinking Humans",
+        "description": "An accessible introduction to AI for general readers.",
+        "cover_path": "covers/ai_guide_for_humans.jpg"
+    },
+    {
+        "title": "The Technological Singularity",
+        "description": "An analysis of the concept of the technological singularity.",
+        "cover_path": "covers/technological_singularity.jpg"
+    },
+    {
+        "title": "Deep Thinking: Where Machine Intelligence Ends and Human Creativity Begins",
+        "description": "A reflection on the limits of AI and the nature of human creativity.",
+        "cover_path": "covers/deep_thinking.jpg"
+    },
+    {
+        "title": "The Future of Humanity: Terraforming Mars, Interstellar Travel, Immortality, and Our Destiny Beyond Earth",
+        "description": "An exploration of humanity's future in the cosmos.",
+        "cover_path": "covers/future_of_humanity.jpg"
+    },
+    {
+        "title": "The Innov
+::contentReference[oaicite:0]{index=0}
+ 
