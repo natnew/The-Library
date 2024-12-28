@@ -39,7 +39,8 @@ def display_book(book):
     # Display book cover
     if os.path.exists(book['cover_path']):
         image = Image.open(book['cover_path'])
-        st.image(image, use_column_width=True)
+        st.image(image, use_container_width=True)
+
     else:
         st.image("https://via.placeholder.com/150", use_column_width=True)
 
