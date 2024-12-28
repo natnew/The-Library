@@ -243,5 +243,10 @@
         "title": "You Look Like a Thing and I Love You",
         "description": "A lighthearted exploration of AI quirks and limitations.",
         "cover_path": "covers/you_look_like_a_thing_and_i_love_you.jpg"
+    },
+    {
+        "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+        "description": "A detailed guide to practical machine learning with hands-on examples.",
+        "cover_path": "covers/hands_on_ml.jpg"
     }
 ]
