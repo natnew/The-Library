@@ -1,4 +1,6 @@
 import streamlit as st
+import os
+import json
 
 # Set the page configuration
 st.set_page_config(page_title="The Library - Bookshelf", layout="wide")
@@ -9,20 +11,22 @@ import os
 from PIL import Image
 
 # Function to load book data from a JSON file
-def load_books(json_file):
+def load_books():
     try:
-        with open(json_file, 'r') as file:
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+        json_path = os.path.join(script_dir, '..', 'data', 'books.json')
+        with open(json_path, 'r') as file:
             books = json.load(file)
         return books
     except FileNotFoundError:
-        st.error(f"Error: The file {json_file} was not found.")
+        st.error(f"Error: The file {json_path} was not found.")
         return []
     except json.JSONDecodeError:
-        st.error(f"Error: The file {json_file} contains invalid JSON.")
+        st.error(f"Error: The file {json_path} contains invalid JSON.")
         return []
 
-# Load books from the JSON file
-books = load_books('../data/books.json')
+# Load books
+books = load_books()
 
 # Sort books alphabetically by title
 books = sorted(books, key=lambda x: x['title'])
