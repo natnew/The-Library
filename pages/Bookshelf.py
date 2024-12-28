@@ -42,7 +42,7 @@ def display_book(book):
         st.image(image, use_container_width=True)
 
     else:
-        st.image("https://via.placeholder.com/150", use_column_width=True)
+        st.image("https://via.placeholder.com/150", use_container_width=True)
 
     # Display book title
     st.write(f"**{book['title']}**")
