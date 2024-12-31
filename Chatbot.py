@@ -5,6 +5,9 @@ from langchain.chains import ConversationChain
 import os
 import time
 
+
+
+
 st.set_page_config(
     page_title="Chatbot",
     page_icon="🤖",  # You can use an emoji or a path to an image file
@@ -60,7 +63,22 @@ if st.button("Get Learning Pathway"):
     else:
         st.warning("Please enter an AI topic and select your knowledge level.")
 
-st.sidebar.title("About The Library")
+
+# Streamlit sidebar for user selection
+st.sidebar.title(":streamlit: The Library")
+st.sidebar.write("This tool is designed to help you explore and learn about AI.")
+# Add this note to the sidebar:
+st.sidebar.write("Accuracy, correctness, or appropriateness cannot be guaranteed.")
+
+st.sidebar.write(
+       "Built by [Natasha Newbold](https://www.linkedin.com/in/natasha-newbold/) "
+            )
+
+# Check if API key is provided
+if os.getenv("OPENAI_API_KEY"):
+    st.sidebar.success("✅ API key already provided!")
+else:
+    st.sidebar.error("❌ API key not provided. Please set your OpenAI API key.")
 st.sidebar.info(
     "Created with Streamlit, LangChain, and GPT-4. Explore, learn, and master AI concepts with ease!"
 )
