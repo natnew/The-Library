@@ -161,7 +161,7 @@ if user_input:
         context = f"You are an expert teaching the course '{selected_course}' and the module '{selected_module}'."
         response = chat_chain.run(input=f"{context} {user_input}")
         streamed_response = stream_response_sentences(response)
-        for sentence in streamed_response:
-            st.write(word)
+        for sentences in streamed_response:
+            st.write_stream(sentences)
     except Exception as e:
         st.error(f"An error occurred: {e}")
