@@ -3,14 +3,14 @@
         "title": "Large Concept Models: Language Modeling in a Sentence Representation Space",
         "duration": "26 min",
         "image_url": "data/images/abstractionbeyondwords01.jpg",
-        "audio_url": "data/LargeConceptModels.wav",
+        "audio_url": "data/videos/LargeConceptModels.wav",
         "source_link": "https://ai.meta.com/research/publications/large-concept-models-language-modeling-in-a-sentence-representation-space/"
     },
     {
         "title": "Automating the Search for Artificial Life with Foundation Models",
         "duration": "28 min",
-        "image_url": "data/images/abstractionbeyondwords02.jpg",
-        "audio_url": "data/AutomatingtheSearchforArtificialLife.wav",
+        "image_url": "data/images/abstractionbeyondwords01.jpg",
+        "audio_url": "data/videos/AutomatingtheSearchforArtificialLife.wav",
         "source_link": "https://arxiv.org/pdf/2412.17799"
     }
 ]
