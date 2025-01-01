@@ -26,22 +26,38 @@ st.sidebar.info(
 
 st.title("📚 The Library: Podcast")
 
-# Base directory for locating images
+# Base directories for locating images and audio
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 IMAGE_DIR = os.path.join(BASE_DIR, "data", "images")
+AUDIO_DIR = os.path.join(BASE_DIR, "data")
 
 # Function to display a single podcast tile
 def display_podcast_tile(podcast):
+    # Construct the correct image path
     image_path = os.path.join(IMAGE_DIR, podcast.get("image_url", ""))
-    st.write(f"Debug: Image path is {image_path}")  # Debugging output
+    audio_path = os.path.join(AUDIO_DIR, podcast.get("audio_url", ""))
+    
+    # Debugging output
+    st.write(f"Debug: Image path is {image_path}")
+    st.write(f"Debug: Audio path is {audio_path}")
+    
+    # Check if the image exists
     if os.path.exists(image_path):
         st.image(image_path, use_container_width=True)
     else:
         st.error(f"Image not found: {image_path}")
+    
+    # Display podcast details
     st.markdown(f"### {podcast['title']}")
     st.write(f"**Duration:** {podcast['duration']}")
-    if podcast.get("audio_url"):
-        st.audio(podcast["audio_url"], format="audio/mp3")
+    
+    # Check if the audio file exists
+    if os.path.exists(audio_path):
+        st.audio(audio_path, format="audio/mp3")
+    else:
+        st.error(f"Audio not found: {audio_path}")
+    
+    # Display source link
     if podcast.get("source_link"):
         st.markdown(f"[View Source]({podcast['source_link']})")
 
