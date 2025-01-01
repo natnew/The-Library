@@ -1,5 +1,6 @@
 import streamlit as st
 import os
+import time
 from langchain_openai import ChatOpenAI
 from langchain.memory import ConversationBufferMemory
 from langchain.chains import ConversationChain
@@ -152,7 +153,10 @@ if user_input:
     with st.spinner("Generating response..."):
         try:
             context = f"You are an expert teaching the course '{selected_course}' and the module '{selected_module}'."
-            answer = chat_chain.run(input=f"{context} {user_input}")
-            st.markdown(f"### Answer:\n{answer}")
+            response = chat_chain.run(input=f"{context} {user_input}")
+            # Streaming effect
+            for char in response:
+                st.write(char, end="", flush=True)
+                time.sleep(0.05)
         except Exception as e:
             st.error(f"An error occurred: {e}")
