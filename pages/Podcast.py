@@ -1,22 +1,19 @@
 import streamlit as st
-from langchain_openai import ChatOpenAI
-from langchain.memory import ConversationBufferMemory
-from langchain.chains import ConversationChain
+import json
 import os
-import time
 
+# Load podcasts from the JSON file located in the 'data' folder
+json_file_path = os.path.join("data", "podcasts.json")
+with open(json_file_path, "r") as file:
+    podcasts = json.load(file)
 
-# Streamlit sidebar for user selection
+# Streamlit sidebar
 st.sidebar.title(":streamlit: The Library")
 st.sidebar.write("This tool is designed to help you explore and learn about AI.")
-# Add this note to the sidebar:
 st.sidebar.write("Accuracy, correctness, or appropriateness cannot be guaranteed.")
-
 st.sidebar.write(
-       "Built by [Natasha Newbold](https://www.linkedin.com/in/natasha-newbold/) "
-            )
-
-# Check if API key is provided
+    "Built by [Natasha Newbold](https://www.linkedin.com/in/natasha-newbold/)"
+)
 if os.getenv("OPENAI_API_KEY"):
     st.sidebar.success("✅ API key already provided!")
 else:
@@ -25,47 +22,10 @@ st.sidebar.info(
     "Created with Streamlit, LangChain, and GPT-4. Explore, learn, and master AI concepts with ease!"
 )
 
+st.title("📚 The Library: Podcast")
 
-
-####
-podcasts = [
-    {
-        "title": "Attention Is All You Need",
-        "duration": "4 min",
-        "image_url": "https://path/to/attention-is-all-you-need.jpg",
-        "audio_url": "https://path/to/attention-is-all-you-need-audio.mp3",
-        "source_link": "https://example.com/research-paper-1"
-    },
-    {
-        "title": "Artificial Intelligence Index Report 2024",
-        "duration": "8 min",
-        "image_url": "https://path/to/ai-index-report.jpg",
-        "audio_url": "https://path/to/ai-index-report-audio.mp3",
-        "source_link": "https://example.com/research-paper-2"
-    },
-    # ... add as many as you like ...
-]
-
-#####
+# Display podcast tiles
 def display_podcast_tile(podcast):
-    """
-    Helper function to display one 'tile' for a single podcast.
-    """
-    st.image(podcast["image_url"], use_column_width=True)
-    st.write(f"### {podcast['title']}")
-    st.write(f"**Duration:** {podcast['duration']}")
-    if podcast["audio_url"]:
-        # If you have a direct .mp3 URL, st.audio can embed an audio player
-        st.audio(podcast["audio_url"], format="audio/mp3")
-    if podcast["source_link"]:
-        st.markdown(f"[View Source]({podcast['source_link']})")
-    # Provide a 'Play' button if you want a separate action – you can handle it as needed
-    # if st.button(f"Play {podcast['title']}"):
-    #     # Do something on click, e.g. st.audio(podcast["audio_url"])
-
-# Main section
-def display_podcast_tile(podcast):
-    # Show image (replacing use_column_width)
     st.image(podcast["image_url"], use_container_width=True)
     st.markdown(f"### {podcast['title']}")
     st.write(f"**Duration:** {podcast['duration']}")
@@ -74,8 +34,7 @@ def display_podcast_tile(podcast):
     if podcast["source_link"]:
         st.markdown(f"[View Source]({podcast['source_link']})")
 
-
-num_cols = 3  # how many tiles per row
+num_cols = 3
 for i in range(0, len(podcasts), num_cols):
     cols = st.columns(num_cols)
     for col_index in range(num_cols):

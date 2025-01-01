@@ -11,6 +11,9 @@ import json
 import os
 from PIL import Image
 
+##
+st.title("📚 The Library: Bookshelf")
+
 # Function to load book data from a JSON file
 def load_books():
     try:

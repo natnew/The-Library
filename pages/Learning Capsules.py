@@ -111,7 +111,7 @@ def show_answer():
     st.session_state.show_answer = True
 
 # 5. Layout
-st.title("AI Learning Capsules")
+st.title("📚 The Library: Learning Capsules")
 
 col1, col2 = st.columns(2)
 

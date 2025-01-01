@@ -24,3 +24,5 @@ else:
 st.sidebar.info(
     "Created with Streamlit, LangChain, and GPT-4. Explore, learn, and master AI concepts with ease!"
 )
+
+st.title("📚 The Library: AI Academy")
