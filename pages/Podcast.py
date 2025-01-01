@@ -24,20 +24,19 @@ st.sidebar.info(
 
 st.title("📚 The Library: Podcast")
 
-# Display podcast tiles
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))  # Directory of the script
+IMAGE_DIR = os.path.join(BASE_DIR, "data", "images")
+
 def display_podcast_tile(podcast):
-    st.image(podcast["image_url"], use_container_width=True)
+    image_path = os.path.join(IMAGE_DIR, podcast["image_url"])
+    if os.path.exists(image_path):
+        st.image(image_path, use_container_width=True)
+    else:
+        st.error(f"Image not found: {image_path}")
     st.markdown(f"### {podcast['title']}")
     st.write(f"**Duration:** {podcast['duration']}")
     if podcast["audio_url"]:
         st.audio(podcast["audio_url"], format="audio/mp3")
     if podcast["source_link"]:
         st.markdown(f"[View Source]({podcast['source_link']})")
-
-num_cols = 3
-for i in range(0, len(podcasts), num_cols):
-    cols = st.columns(num_cols)
-    for col_index in range(num_cols):
-        if i + col_index < len(podcasts):
-            with cols[col_index]:
-                display_podcast_tile(podcasts[i + col_index])
