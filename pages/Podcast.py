@@ -26,44 +26,38 @@ st.sidebar.info(
 
 st.title("📚 The Library: Podcast")
 
-# Base directories for locating images and videos
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+# Base directories for locating images and audio
+BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))  # Move up one directory
 IMAGE_DIR = os.path.join(BASE_DIR, "data", "images")
-VIDEO_DIR = os.path.join(BASE_DIR, "data", "videos")
+AUDIO_DIR = os.path.join(BASE_DIR, "data", "audio")
+
 
 # Function to display a single podcast tile
 def display_podcast_tile(podcast):
     # Construct the correct paths
-    image_path = os.path.join(IMAGE_DIR, podcast.get("image_url", ""))
-    video_path = os.path.join(VIDEO_DIR, podcast.get("audio_url", ""))
-    
-    # Debugging output
-    st.write(f"Debug: Image path is {image_path}")
-    st.write(f"Debug: Video path is {video_path}")
-    
-    # Check if the image exists
+    image_path = os.path.join(BASE_DIR, podcast.get("image_url", ""))
+    audio_path = os.path.join(BASE_DIR, podcast.get("audio_url", ""))
+
+    # Display podcast details
     if os.path.exists(image_path):
         st.image(image_path, use_container_width=True)
     else:
-        st.error(f"Image not found: {image_path}")
-    
-    # Display podcast details
+        st.warning(f"Image not found: {image_path}")
+
     st.markdown(f"### {podcast['title']}")
     st.write(f"**Duration:** {podcast['duration']}")
-    
-    # Check if the video file exists
-    if os.path.exists(video_path):
-        st.audio(video_path, format="audio/wav")
+
+    if os.path.exists(audio_path):
+        st.audio(audio_path, format="audio/wav")
     else:
-        st.error(f"Audio not found: {video_path}")
-    
-    # Display source link
+        st.warning(f"Audio not found: {audio_path}")
+
     if podcast.get("source_link"):
         st.markdown(f"[View Source]({podcast['source_link']})")
 
 # Display podcasts in a grid layout
 if podcasts:
-    num_cols = 3  # Number of columns for the layout
+    num_cols = 2  # Adjust the number of columns for the layout
     for i in range(0, len(podcasts), num_cols):
         cols = st.columns(num_cols)
         for col_index in range(num_cols):
