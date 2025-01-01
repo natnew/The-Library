@@ -162,6 +162,6 @@ if user_input:
         response = chat_chain.run(input=f"{context} {user_input}")
         streamed_response = stream_response_sentences(response)
         for sentence in streamed_response:
-            st.write(sentence)
+            st.write(word)
     except Exception as e:
         st.error(f"An error occurred: {e}")
