@@ -9,7 +9,7 @@ from langchain.chains import ConversationChain
 st.set_page_config(page_title="The Library: AI Academy", layout="wide")
 
 # Page Title
-st.title("The Library: AI Academy")
+st.title("📚 The Library: AI Academy")
 
 # Load API Key
 OPENAI_API_KEY = st.secrets.get("OPENAI_API_KEY", None)
@@ -147,6 +147,12 @@ selected_module = st.sidebar.selectbox("Select a Module", courses[selected_cours
 st.header(f"{selected_course} - {selected_module}")
 st.write("Ask a question related to the selected module below:")
 
+# Function to stream response
+def stream_response(response_text):
+    for word in response_text.split():
+        yield word + " "
+        time.sleep(0.05)
+
 # Input for User Questions
 user_input = st.text_input("Your Question", key="user_question")
 if user_input:
@@ -154,9 +160,8 @@ if user_input:
         try:
             context = f"You are an expert teaching the course '{selected_course}' and the module '{selected_module}'."
             response = chat_chain.run(input=f"{context} {user_input}")
-            # Streaming effect
-            for char in response:
-                st.write(char, end="", flush=True)
-                time.sleep(0.05)
+            stream = stream_response(response)
+            for word in stream:
+                st.write(word, end="")
         except Exception as e:
             st.error(f"An error occurred: {e}")
