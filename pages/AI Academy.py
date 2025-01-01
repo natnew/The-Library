@@ -9,10 +9,10 @@ from langchain.chains import ConversationChain
 st.set_page_config(page_title="The Library: AI Academy", layout="wide")
 
 # Page Title
-st.title("📚 The Library: AI Academy")
+st.title("The Library: AI Academy")
 
 # Load API Key
-OPENAI_API_KEY = st.secrets.get("OPENAI_API_KEY", None)
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", None)
 if not OPENAI_API_KEY:
     st.error("API key not found. Please configure the API key in Streamlit secrets.")
     st.stop()
@@ -147,21 +147,21 @@ selected_module = st.sidebar.selectbox("Select a Module", courses[selected_cours
 st.header(f"{selected_course} - {selected_module}")
 st.write("Ask a question related to the selected module below:")
 
-# Function to stream response
-def stream_response(response_text):
-    for word in response_text.split():
-        yield word + " "
-        time.sleep(0.05)
+# Function to stream the response as sentences
+def stream_response_sentences(response_text):
+    sentences = response_text.split('. ')
+    for sentence in sentences:
+        yield sentence.strip() + '. '
+        time.sleep(0.5)
 
 # Input for User Questions
 user_input = st.text_input("Your Question", key="user_question")
 if user_input:
-    with st.spinner("Generating response..."):
-        try:
-            context = f"You are an expert teaching the course '{selected_course}' and the module '{selected_module}'."
-            response = chat_chain.run(input=f"{context} {user_input}")
-            stream = stream_response(response)
-            for word in stream:
-                st.write(word, end="")
-        except Exception as e:
-            st.error(f"An error occurred: {e}")
+    try:
+        context = f"You are an expert teaching the course '{selected_course}' and the module '{selected_module}'."
+        response = chat_chain.run(input=f"{context} {user_input}")
+        streamed_response = stream_response_sentences(response)
+        for sentence in streamed_response:
+            st.write(sentence)
+    except Exception as e:
+        st.error(f"An error occurred: {e}")
