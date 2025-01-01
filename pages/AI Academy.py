@@ -5,7 +5,10 @@ from langchain.memory import ConversationBufferMemory
 from langchain.chains import ConversationChain
 
 # App Configuration
-st.set_page_config(page_title="AI Learning Hub", layout="wide")
+st.set_page_config(page_title="The Library: AI Academy", layout="wide")
+
+# Page Title
+st.title("The Library: AI Academy")
 
 # Load API Key
 OPENAI_API_KEY = st.secrets.get("OPENAI_API_KEY", None)
@@ -136,15 +139,15 @@ courses = {
     ]
 }
 
-# Dropdown for Course Selection
-selected_course = st.selectbox("Select a Course", list(courses.keys()))
-selected_module = st.selectbox("Select a Module", courses[selected_course])
+# Sidebar for Course and Module Selection
+selected_course = st.sidebar.selectbox("Select a Course", list(courses.keys()), key="course_select")
+selected_module = st.sidebar.selectbox("Select a Module", courses[selected_course], key="module_select")
 
-st.title(f"{selected_course} - {selected_module}")
+st.header(f"{selected_course} - {selected_module}")
 st.write("Ask a question related to the selected module below:")
 
 # Input for User Questions
-user_input = st.text_input("Your Question")
+user_input = st.text_input("Your Question", key="user_question")
 if user_input:
     with st.spinner("Generating response..."):
         try:
