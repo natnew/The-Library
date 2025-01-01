@@ -93,59 +93,60 @@ Source: https://arxiv.org/pdf/2411.15124
 #### Generative Agent Simulations of 1,000 People
 Source:https://arxiv.org/pdf/2411.10109
 
-####
-Source:
+#### Scaling Laws for Precision
+Source: https://arxiv.org/pdf/2411.04330
 
-####
-Source:
+#### Artificial Intelligence, Scientific Discovery, and Product Innovation
+Source: https://aidantr.github.io/files/AI_innovation.pdf
 
-####
-Source:
+####  OPENCODER: THE OPEN COOKBOOK FOR TOP-TIER CODE LARGE LANGUAGE MODELS
+Source: https://arxiv.org/pdf/2411.04905
 
-####
-Source:
+#### The Surprising Effectiveness of Test-Time Training for Abstract Reasoning
+Source: https://ekinakyurek.github.io/papers/ttt.pdf
 
-####
-Source:
+#### ATaxonomy of AgentOps for Enabling Observability of Foundation Model based Agents
+Source: https://arxiv.org/pdf/2411.05285v1
 
-####
-Source:
+#### Toward Optimal Search and Retrieval for RAG
+Source: https://arxiv.org/pdf/2411.07396
 
-####
-Source:
+#### RAPID RESPONSE: MITIGATING LLM JAILBREAKS WITH A FEW EXAMPLES
+Source:https://arxiv.org/pdf/2411.07494
 
-####
-Source:
+#### Project Sid: Many-agent simulations toward AI civilization
+Source:https://arxiv.org/pdf/2411.00114
 
-####
-Source:
+#### Multi-expert Prompting Improves Reliability, Safety and Usefulness of Large Language Models
+Source: https://arxiv.org/pdf/2411.00492
 
-####
-Source:
+#### Number Cookbook: Number Understanding of Language Models and How to Improve It
+Source: https://arxiv.org/pdf/2411.03766
 
-####
-Source:
+#### WEBRL: TRAINING LLM WEB AGENTS VIA SELF EVOLVING ONLINE CURRICULUM REINFORCEMENT LEARNING
+Source: https://arxiv.org/pdf/2411.02337
 
-####
-Source:
+#### Adapting While Learning: Grounding LLMs for Scientific Problems with Intelligent Tool Usage Adaptation
+Source: https://arxiv.org/pdf/2411.00412
 
-####
-Source:
+#### Personalization of Large Language Models: A Survey
+Source: https://arxiv.org/pdf/2411.00027
 
-####
-Source:
+#### THE GEOMETRY OF CONCEPTS: SPARSE AUTOENCODER FEATURE STRUCTURE
+Source: https://arxiv.org/pdf/2410.19750
 
-####
-Source:
+#### AFLOW: AUTOMATING AGENTIC WORKFLOW GENERATION
+Source: https://arxiv.org/pdf/2410.10762
 
-####
-Source:
+#### ARITHMETIC WITHOUT ALGORITHMS: LANGUAGE MODELS SOLVE MATH WITH A BAG OF HEURISTICS
+Source: https://arxiv.org/pdf/2410.21272
 
-####
-Source:
+#### Distinguishing Ignorance from Error in LLM Hallucinations
+Source: https://arxiv.org/pdf/2410.22071
 
-####
-Source:
+#### Beyond Text: Optimizing RAG with Multimodal Inputs for Industrial
+ Applications
+Source: https://arxiv.org/pdf/2410.21943
 
-####
-Source:
+#### Investigating the Role of Prompting and External Tools in Hallucination Rates of Large Language Models
+Source: https://arxiv.org/pdf/2410.19385
