@@ -3,34 +3,34 @@
         {
             "title": "Calendar Agent with Native Multi-Step Tool",
             "description": "A minimal working example of how to use our chat API to call tools.",
-            "image_url": "https://via.placeholder.com/300",
-            "github_url": "https://github.com/your-repo/calendar-agent"
+            "image_url": "data/images/Copilot_12.jpg",
+            "github_url": "https://github.com/natnew/The-Library"
         },
         {
             "title": "Basic Tool Use",
             "description": "Connect large language models to external tools, like search engines and APIs.",
-            "image_url": "https://via.placeholder.com/300",
-            "github_url": "https://github.com/your-repo/basic-tool-use"
+            "image_url": "data/images/Copilot_03.jpg",
+            "github_url": "https://github.com/natnew/The-Library"
         },
         {
             "title": "Multi-Step Tool Use",
             "description": "Multi-step tool use allows developers to connect models to external tools and databases.",
-            "image_url": "https://via.placeholder.com/300",
-            "github_url": "https://github.com/your-repo/multi-step-tool"
+            "image_url": "data/images/Copilot_02.jpg",
+            "github_url": "https://github.com/natnew/The-Library"
         }
     ],
     "Intro to AI Agents": [
         {
             "title": "Simple AI Agent Design",
             "description": "Learn how to design a simple AI agent using GPT models.",
-            "image_url": "https://via.placeholder.com/300",
-            "github_url": "https://github.com/your-repo/simple-agent-design"
+            "image_url": "data/images/Copilot_01.jpg",
+            "github_url": "https://github.com/natnew/The-Library"
         },
         {
             "title": "Multi-Agent Collaboration",
             "description": "Build a system where multiple agents collaborate to solve complex tasks.",
-            "image_url": "https://via.placeholder.com/300",
-            "github_url": "https://github.com/your-repo/multi-agent-collaboration"
+            "image_url": "hdata/images/Copilo_21.jpg",
+            "github_url": "https://github.com/natnew/The-Library"
         }
     ]
 }

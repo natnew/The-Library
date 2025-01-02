@@ -194,7 +194,7 @@ if selected_course in project_data:
     cols = st.columns(3)  # Three projects per row
     for i, project in enumerate(module_projects):
         with cols[i % 3]:  # Cycle through columns
-            st.image(project["image_url"], use_column_width=True)  # Display the project image
+            st.image(project["image_url"], use_container_width=True)  # Display the project image
             st.markdown(f"### {project['title']}")
             st.write(project["description"])
             st.markdown(f"[Build this]( {project['github_url']} )", unsafe_allow_html=True)
