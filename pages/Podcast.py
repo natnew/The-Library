@@ -25,6 +25,7 @@ st.sidebar.info(
 )
 
 st.title("📚 The Library: Podcast")
+st.write("Join us as we explore the impact of AI on our world")
 
 # Base directories for locating images and audio
 BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))  # Move up one directory

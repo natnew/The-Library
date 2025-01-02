@@ -9,7 +9,8 @@ from langchain.chains import ConversationChain
 st.set_page_config(page_title="The Library: AI Academy", layout="wide")
 
 # Page Title
-st.title("The Library: AI Academy")
+st.title("📚 The Library: AI Academy")
+st.write("Courses on Artificial Intelligence.")
 
 # Load API Key
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", None)
@@ -158,7 +159,7 @@ def stream_response_sentences(response_text):
 user_input = st.text_input("Your Question", key="user_question")
 if user_input:
     try:
-        context = f"You are an expert teaching the course '{selected_course}' and the module '{selected_module}'."
+        context = f"You are an AI expert teaching the course '{selected_course}' and the module '{selected_module}'. You answer in full sentences using a minimum of 150 words. You answer in simple language and provide information on the topics."
         response = chat_chain.run(input=f"{context} {user_input}")
         streamed_response = stream_response_sentences(response)
         st.write_stream(streamed_response)

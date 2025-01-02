@@ -110,8 +110,9 @@ def show_answer():
     """Reveal the answer."""
     st.session_state.show_answer = True
 
-# 5. Layout
+#  Layout
 st.title("📚 The Library: Learning Capsules")
+st.write("Grasp key Artificial Intelligence concepts.")
 
 col1, col2 = st.columns(2)
 

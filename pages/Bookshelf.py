@@ -13,6 +13,7 @@ from PIL import Image
 
 ##
 st.title("📚 The Library: Bookshelf")
+st.write("Your Artificial Intelligence reading list.")
 
 # Function to load book data from a JSON file
 def load_books():
