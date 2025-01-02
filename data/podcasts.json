@@ -9,8 +9,99 @@
     {
         "title": "Automating the Search for Artificial Life with Foundation Models",
         "duration": "28 min",
-        "image_url": "data/images/abstractionbeyondwords01.jpg",
+        "image_url": "data/images/abstractionbeyondwords02.jpg",
         "audio_url": "data/audio/AutomatingtheSearchforArtificialLife.wav",
         "source_link": "https://arxiv.org/pdf/2412.17799"
+    },
+    {
+        "title": "Explore Theory-of-Mind Program-Guided Adversarial Data Generation for Theory of Mind Reasoning",
+        "duration": "15 min",
+        "image_url": "data/images/abstractionbeyondwords03.jpg",
+        "audio_url": "data/audio/Explore Theory-of-Mind_ Program-Guided.wav",
+        "source_link": "https://ai.meta.com/research/publications/explore-theory-of-mind-program-guided-adversarial-data-generation-for-theory-of-mind-reasoning/"
+    },
+    {
+        "title": "Agentic RAG_ A Comprehensive Guide #07",
+        "duration": "",
+        "image_url": "data/images/abstractionbeyondwords04.jpg",
+        "audio_url": "data/audio/Agentic RAG_ A Comprehensive Guide #07.wav",
+        "source_link": ""
+    },
+    {
+        "title": "AI Product Management Best Practices #011",
+        "duration": "",
+        "image_url": "data/images/anisolatedcolored01.jpg",
+        "audio_url": "data/audio/AI Product Management Best Practices #011.wav",
+        "source_link": ""
+    },
+    {
+        "title": "Building a 24_7 AI Community Moderator #09",
+        "duration": "",
+        "image_url": "data/images/anisolatedcolored03.jpg",
+        "audio_url": "data/audio/Building a 24_7 AI Community Moderator #09.wav",
+        "source_link": ""
+    },
+    {
+        "title": "Challengers--Are-Coming-for-Nvidia’s-Crown #05",
+        "duration": "",
+        "image_url": "data/images/FireflyAcooltonedabstractwithicyblues01 .jpg",
+        "audio_url": "data/audio/Challengers--Are-Coming-for-Nvidia’s-Crown #05.wav",
+        "source_link": ""
+    },
+    {
+        "title": "High-Res-X-Rays-Image-the-Tiniest-Transistors #04",
+        "duration": "",
+        "image_url": "data/images/FireflySoftflowingshapesinmuted01.jpg",
+        "audio_url": "data/audio/High-Res-X-Rays-Image-the-Tiniest-Transistors #04.wav",
+        "source_link": ""
+    },
+    {
+        "title": "Hybrid-Memory-Designed-to-Cut-AI-Energy-Use #03",
+        "duration": "",
+        "image_url": "data/images/FireflyInspiredbycloudsofgasinspace01.jpg",
+        "audio_url": "data/audio/Hybrid-Memory-Designed-to-Cut-AI-Energy-Use #03.wav",
+        "source_link": ""
+    },
+    {
+        "title": "Measuring the ROI of Generative AI #08",
+        "duration": "",
+        "image_url": "data/images/FireflyAdeepunderwaterinspiredabstract02.jpg",
+        "audio_url": "data/audio/Measuring the ROI of Generative AI #08.wav",
+        "source_link": ""
+    },
+    {
+        "title": "Microsoft-may-have-an-audio-to-image-generator-in-the-works #02",
+        "duration": "",
+        "image_url": "data/images/FireflyApaintingwherevaporousshapes01 .jpg",
+        "audio_url": "data/audio/Microsoft-may-have-an-audio-to-image-generator-in-the-works #02.wav",
+        "source_link": ""
+    },
+    {
+        "title": "OpenAI's o1_ Higher Reasoning at a Premium Price #012",
+        "duration": "",
+        "image_url": "data/images/FireflyAspacelikeabstractwithdeepindigo02.jpg",
+        "audio_url": "data/audio/OpenAI's o1_ Higher Reasoning at a Premium Price #012.wav",
+        "source_link": ""
+    },
+    {
+        "title": "Prompt Engineering #06",
+        "duration": "",
+        "image_url": "data/images/FireflyAnenergeticchaoticabstractwithfieryreds01.jpg",
+        "audio_url": "data/audio/Prompt Engineering #06.wav",
+        "source_link": ""
+    },
+    {
+        "title": "Unlocking Enterprise AI Value #010",
+        "duration": "",
+        "image_url": "data/images/FireflyInspiredbycloudsofgasinspace02.jpg",
+        "audio_url": "data/audio/Unlocking Enterprise AI Value #010.wav",
+        "source_link": ""
+    },
+    {
+        "title": "Neural-Network-Is-More-Explainable-and-Accurate #01",
+        "duration": "",
+        "image_url": "data/images/FireflyAvibrantabstractusingshadesofpaleemerald02.jpg",
+        "audio_url": "data/audio/Neural-Network-Is-More-Explainable-and-Accurate #01.wav",
+        "source_link": ""
     }
 ]
