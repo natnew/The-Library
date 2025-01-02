@@ -4,6 +4,8 @@ import time
 from langchain_openai import ChatOpenAI
 from langchain.memory import ConversationBufferMemory
 from langchain.chains import ConversationChain
+import json
+
 
 # App Configuration
 st.set_page_config(page_title="The Library: AI Academy", layout="wide")
@@ -165,3 +167,36 @@ if user_input:
         st.write_stream(streamed_response)
     except Exception as e:
         st.error(f"An error occurred: {e}")
+
+
+# Add "Build Projects" Section Below the Existing UI
+# Load JSON Data
+def load_projects():
+    try:
+        with open("data/projects.json", "r") as f:
+            return json.load(f)
+    except FileNotFoundError:
+        st.error("Project data not found. Please add a 'projects.json' file in the 'data' folder.")
+        return {}
+
+# Load Project Data
+project_data = load_projects()
+
+# Build Projects Section
+st.subheader("Build Projects")
+st.write("Here are some hands-on projects related to this module. Click on 'Build this' to access the corresponding GitHub repository.")
+
+# Check if there are projects for the selected course
+if selected_course in project_data:
+    module_projects = project_data[selected_course]
+    
+    # Display Project Cards
+    cols = st.columns(3)  # Three projects per row
+    for i, project in enumerate(module_projects):
+        with cols[i % 3]:  # Cycle through columns
+            st.image(project["image_url"], use_column_width=True)  # Display the project image
+            st.markdown(f"### {project['title']}")
+            st.write(project["description"])
+            st.markdown(f"[Build this]( {project['github_url']} )", unsafe_allow_html=True)
+else:
+    st.info("No projects available for this module.")
